@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "209729179784",
+    "project_id": "soochi-c49fa",
+    "storage_bucket": "soochi-c49fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209729179784:android:39ca13ec7e4327fd0b8f3d",
+        "android_client_info": {
+          "package_name": "com.example.soochi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "209729179784-kjlro5tl12l55fn5j10lj4o0r33r1111.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1gncB_-q_B1FcwyymjbWNjv1falTbAiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "209729179784-kjlro5tl12l55fn5j10lj4o0r33r1111.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
