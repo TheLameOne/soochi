@@ -2,8 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:soochi/screens/login_screen.dart';
+import 'package:soochi/utils/styles.dart';
 import '../model/user_model.dart';
-import 'home_screen.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({Key? key}) : super(key: key);
@@ -52,7 +53,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Name",
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
           ),
         ));
 
@@ -66,9 +67,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             return ("Please Enter Your Email");
           }
           // reg expression for email validation
-          if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
-              .hasMatch(value)) {
-            return ("Please Enter a valid email");
+          if (!RegExp("[a-z0-9]+@abes.ac.in").hasMatch(value)) {
+            return ("Please enter a valid @abes email");
           }
           return null;
         },
@@ -81,7 +81,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Email",
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
           ),
         ));
 
@@ -91,7 +91,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         controller: passwordEditingController,
         obscureText: true,
         validator: (value) {
-          RegExp regex = new RegExp(r'^.{6,}$');
+          RegExp regex = RegExp(r'^.{6,}$');
           if (value!.isEmpty) {
             return ("Password is required for login");
           }
@@ -108,7 +108,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Password",
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
           ),
         ));
 
@@ -133,7 +133,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Confirm Password",
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
           ),
         ));
 
@@ -141,10 +141,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     final signUpButton = Material(
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
-      color: Colors.redAccent,
+      color: Styles.COLOR4,
       child: MaterialButton(
           padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-          minWidth: MediaQuery.of(context).size.width,
+          minWidth: MediaQuery.of(context).size.width - 200,
           onPressed: () {
             signUp(emailEditingController.text, passwordEditingController.text);
           },
@@ -157,12 +157,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     );
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Styles.COLOR1,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.red),
+          icon: Icon(Icons.arrow_back, color: Styles.COLOR4),
           onPressed: () {
             // passing this to our root
             Navigator.of(context).pop();
@@ -172,7 +172,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       body: Center(
         child: SingleChildScrollView(
           child: Container(
-            color: Colors.white,
+            color: Styles.COLOR1,
             child: Padding(
               padding: const EdgeInsets.all(36.0),
               child: Form(
@@ -209,6 +209,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   }
 
   void signUp(String email, String password) async {
+    email = email.trimRight();
     if (_formKey.currentState!.validate()) {
       try {
         await _auth
@@ -269,7 +270,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
     Navigator.pushAndRemoveUntil(
         (context),
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        MaterialPageRoute(builder: (context) => LoginScreen()),
         (route) => false);
   }
 }

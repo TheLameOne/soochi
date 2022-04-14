@@ -39,9 +39,8 @@ class _LoginScreenState extends State<LoginScreen> {
             return ("Please Enter Your Email");
           }
           // reg expression for email validation
-          if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
-              .hasMatch(value)) {
-            return ("Please Enter a valid email");
+          if (!RegExp("[a-z0-9]+@abes.ac.in").hasMatch(value)) {
+            return ("Please Enter a valid ABES email");
           }
           return null;
         },
@@ -54,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Email",
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
           ),
         ));
 
@@ -81,7 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
           contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           hintText: "Password",
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(15),
           ),
         ));
 
@@ -165,6 +164,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   // login function
   void signIn(String email, String password) async {
+    email = email.trimRight();
     if (_formKey.currentState!.validate()) {
       try {
         await _auth
@@ -178,7 +178,6 @@ class _LoginScreenState extends State<LoginScreen> {
         switch (error.code) {
           case "invalid-email":
             errorMessage = "Your email address appears to be malformed.";
-
             break;
           case "wrong-password":
             errorMessage = "Email or Password is wrong.";

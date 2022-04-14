@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Soochi',
       theme: ThemeData(
-          primarySwatch: Colors.red, textTheme: GoogleFonts.latoTextTheme()),
+          primarySwatch: Colors.blueGrey,
+          textTheme: GoogleFonts.latoTextTheme()),
       debugShowCheckedModeBanner: false,
       home: const LoginScreen(),
     );
