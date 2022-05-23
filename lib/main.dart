@@ -1,7 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:soochi/screens/home_screen.dart';
+import 'package:soochi/screens/home_screen2.dart';
 import 'package:soochi/screens/login_screen.dart';
+import 'package:soochi/screens/splash_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,7 +25,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blueGrey,
           textTheme: GoogleFonts.latoTextTheme()),
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }

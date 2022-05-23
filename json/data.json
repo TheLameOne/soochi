@@ -1,0 +1,60 @@
+[
+    {
+        "day": "Monday",
+        "slot": [
+            {
+                "id": 2,
+                "lecture": "CN LAB",
+                "faculty": "Gaurav Vats",
+                "venue": "Lab S1"
+        }
+        ]
+    },
+    {
+    "day": "Tuesday",
+    "slot": [
+        {
+            "id": 2,
+            "lecture": "CN LAB",
+            "faculty": "Gaurav Vats",
+            "venue": "Lab S1"
+        },
+        {
+            "id": 3,
+            "lecture": "Image Processing",
+            "faculty": "Disha mam",
+            "venue": "Lab S6"
+        },
+        {
+            "id": 4,
+            "lecture": "CN",
+            "faculty": "Gaurav Vats",
+            "venue": "LT-9"
+        },
+        {
+            "id": 5,
+            "lecture": "Web Tech",
+            "faculty": "Lopamudra",
+            "venue": "LT-9"
+        },
+        {
+            "id": 6,
+            "lecture": "Problem Solving",
+            "faculty": "Rohit Vashisth",
+            "venue": "LT-1"
+        },
+        {
+            "id": 7,
+            "lecture": "Problem Solving",
+            "faculty": "Rohit Vashisth",
+            "venue": "LT-1"
+        },
+        {
+            "id": 8,
+            "lecture": "SPM",
+            "faculty": "Mansi mam",
+            "venue": "LT-1"
+        }
+    ]
+}
+]

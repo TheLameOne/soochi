@@ -5,6 +5,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 import '../utils/styles.dart';
 import 'home_screen.dart';
+import 'home_screen2.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -40,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
           }
           // reg expression for email validation
           if (!RegExp("[a-z0-9]+@abes.ac.in").hasMatch(value)) {
-            return ("Please Enter a valid ABES email");
+            return ("Please enter a valid ABES email");
           }
           return null;
         },
