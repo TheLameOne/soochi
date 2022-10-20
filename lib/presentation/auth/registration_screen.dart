@@ -2,13 +2,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:soochi/screens/login_screen.dart';
+import 'package:soochi/presentation/auth/login_screen.dart';
 import 'package:soochi/utils/styles.dart';
-import '../model/user_model.dart';
+import '../../model/user_model.dart';
 
 class RegistrationScreen extends StatefulWidget {
-  const RegistrationScreen({Key? key}) : super(key: key);
-
+  static const String routeNamed = 'RegistrationScreen';
   @override
   _RegistrationScreenState createState() => _RegistrationScreenState();
 }

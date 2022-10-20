@@ -1,15 +1,16 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:soochi/screens/home_screen.dart';
-import 'package:soochi/screens/home_screen2.dart';
-import 'package:soochi/screens/login_screen.dart';
-import 'package:soochi/screens/splash_screen.dart';
+import 'package:soochi/presentation/TabPages/Home.dart';
+import 'package:soochi/presentation/SplashPage.dart';
+import 'package:soochi/presentation/TabPages/Profile.dart';
+import 'package:soochi/presentation/auth/login_screen.dart';
+import 'package:soochi/presentation/auth/registration_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
   runApp(const MyApp());
 }
 
@@ -20,12 +21,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Soochi',
-      theme: ThemeData(
-          primarySwatch: Colors.blueGrey,
-          textTheme: GoogleFonts.latoTextTheme()),
-      debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Soochi',
+        // theme: ThemeData(
+        //     primarySwatch: Colors.blueGrey,
+        //     textTheme: GoogleFonts.latoTextTheme()),
+        initialRoute: SplashPage.routeNamed,
+        routes: {
+          SplashPage.routeNamed: (BuildContext context) => SplashPage(),
+          RegistrationScreen.routeNamed: (BuildContext context) =>
+              RegistrationScreen(),
+          LoginScreen.routeNamed: (BuildContext context) => LoginScreen(),
+          Home.routeNamed: (BuildContext context) => Home(),
+          Profile.routeNamed: (BuildContext context) => Profile(),
+        });
   }
 }

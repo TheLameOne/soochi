@@ -1,14 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:soochi/screens/registration_screen.dart';
+import 'package:soochi/presentation/auth/registration_screen.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-import '../utils/styles.dart';
-import 'home_screen.dart';
-import 'home_screen2.dart';
+import '../../utils/styles.dart';
+import '../TabPages/Home.dart';
+import '../home_screen2.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  static const String routeNamed = 'LoginScreen';
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
@@ -100,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 20,
-                color: Styles.COLOR1,
+                color: Styles.textColorMain,
                 fontWeight: FontWeight.bold),
           )),
     );
@@ -173,7 +173,7 @@ class _LoginScreenState extends State<LoginScreen> {
             .then((uid) => {
                   Fluttertoast.showToast(msg: "Login Successful"),
                   Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => HomeScreen())),
+                      MaterialPageRoute(builder: (context) => Home())),
                 });
       } on FirebaseAuthException catch (error) {
         switch (error.code) {

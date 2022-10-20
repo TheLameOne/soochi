@@ -1,0 +1,103 @@
+import 'dart:convert';
+import 'dart:math';
+import 'package:calendar_view/calendar_view.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:soochi/model/test_model.dart';
+import '../../model/data_model.dart';
+import '../../utils/styles.dart';
+import 'package:flutter/services.dart' as rootbundle;
+
+import '../custom/PeriodCard.dart';
+
+class Home extends StatefulWidget {
+  static const String routeNamed = 'Home';
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+//  CalendarControllerProvider.of(context).controller.add(event);
+class _HomeState extends State<Home> {
+  var colorList = [Styles.redCard, Styles.blueCard, Styles.yellowCard];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+          child: FutureBuilder(
+        future: readJsonData(),
+        builder: (context, data) {
+          if (data.hasError) {
+            return Center(child: Text("${data.error}"));
+          } else if (data.hasData) {
+            var items = data.data as List<DataModel>;
+            return Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Good Morning, Harsh",
+                          style: GoogleFonts.poppins(
+                              fontSize: 24,
+                              fontWeight: FontWeight.w400,
+                              color: Styles.textColorMain)),
+                      SizedBox(
+                        height: 16,
+                      )
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      for (int j = 0; j < items.length; j++)
+                        for (int i = 0; i < items[j].slot!.length; i++)
+                          // Custom Card
+                          PeriodCard(
+                            onTap: () {},
+                            color:
+                                colorList[Random().nextInt(colorList.length)],
+                          ),
+                      // Text(items[0].slot![1].lecture.toString()),
+                      // Text(items[0].slot![2].lecture.toString()),
+                      // Text(items[0].slot![3].lecture.toString()),
+                      // Text(items[0].slot![4].lecture.toString()),
+                      // Text(items[0].slot![5].lecture.toString()),
+                      // Text(items[0].slot![6].lecture.toString()),
+                      // Text(items[0].slot![7].lecture.toString()),
+                    ],
+                  ),
+                ],
+              ),
+            );
+            // return ListView.builder(
+            //     itemCount: items.length,
+            //     itemBuilder: (context, index) {
+            //       return Text(
+            //         items[index].slot![7].lecture.toString(),
+            //       );
+            //     });
+          } else {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        },
+      )),
+    );
+  }
+
+  Future<List<DataModel>> readJsonData() async {
+    final jsondata = await rootbundle.rootBundle.loadString('json/data.json');
+    print(jsondata);
+    final list = json.decode(jsondata) as List<dynamic>;
+    List<DataModel> res = [];
+    for (var item in list) res.add(DataModel.fromJson(item));
+    return res;
+    // return list.map((e) => DataModel.fromJson(e)).toList();
+  }
+}
