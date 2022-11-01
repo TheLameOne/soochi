@@ -58,6 +58,18 @@ class _HomeState extends State<Home> {
                         for (int i = 0; i < items[j].slot!.length; i++)
                           // Custom Card
                           PeriodCard(
+                            facultyName:
+                                items[j].slot![i].facultyName.toString(),
+                            subjectCode:
+                                items[j].slot![i].subjectCode.toString(),
+                            subjectName:
+                                items[j].slot![i].subjectName.toString(),
+                            timeStart: items[j].slot![i].timeStart.toString(),
+                            timeEnd: items[j].slot![i].timeEnd.toString(),
+                            lectureHall:
+                                items[j].slot![i].lectureHall.toString(),
+                            lectureBlock:
+                                items[j].slot![i].lectureBlock.toString(),
                             onTap: () {},
                             color:
                                 colorList[Random().nextInt(colorList.length)],

@@ -12,4 +12,7 @@ abstract class Styles {
   static const Color textColorLight = Color.fromRGBO(63, 60, 60, 1);
   // 21 21 34
   static const Color timeColor = Color.fromRGBO(21, 21, 34, 1);
+  static const Color bottomNavbar = Color.fromRGBO(248, 248, 248, 1);
+  static const Color navbarIcons = Color.fromRGBO(98, 142, 144, 1);
+  // rgb(98, 142, 144)
 }

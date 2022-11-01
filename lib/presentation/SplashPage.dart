@@ -30,20 +30,25 @@ class _SplashPageState extends State<SplashPage> {
     return Container(
       decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(32), topRight: Radius.circular(32)),
-          color: Colors.black,
+              topLeft: Radius.circular(16), topRight: Radius.circular(16)),
+          color: Styles.bottomNavbar,
           boxShadow: [
-            BoxShadow(color: Colors.black, blurRadius: 10, offset: Offset(4, 2))
+            BoxShadow(
+                color: Styles.bottomNavbar,
+                blurRadius: 10,
+                offset: Offset(4, 2))
           ]),
       child: Card(
-        color: Colors.black,
+        color: Styles.bottomNavbar,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             _getBottomBarItem(
-                index: 0, icontab: Icons.people_alt, text: "Attendance"),
+                index: 0,
+                icontab: Icons.calendar_today_rounded,
+                text: "Attendance"),
             _getBottomBarItem(
-                index: 1, icontab: Icons.calendar_month, text: "Home"),
+                index: 1, icontab: Icons.format_align_justify, text: "Home"),
             _getBottomBarItem(
                 index: 2, icontab: Icons.account_circle, text: "Profile"),
           ],
@@ -80,8 +85,9 @@ class _SplashPageState extends State<SplashPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(icontab,
-                        color:
-                            currentPage == index ? Colors.cyan : Colors.white,
+                        color: currentPage == index
+                            ? Styles.navbarIcons
+                            : Colors.black,
                         size: (28)),
                     // (currentPage == index) ? Container(margin:const EdgeInsets.only(left: 8) ,child: CustomText.smalltext(text)) : const Text('')
                   ],
@@ -99,7 +105,7 @@ class _SplashPageState extends State<SplashPage> {
     return SafeArea(
       child: Scaffold(
         bottomNavigationBar: _getBottomBar(),
-        backgroundColor: Colors.black,
+        backgroundColor: Styles.bottomNavbar,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[Expanded(child: _getBody())],

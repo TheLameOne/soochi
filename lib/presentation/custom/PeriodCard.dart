@@ -6,7 +6,8 @@ class PeriodCard extends StatelessWidget {
   final String subjectName;
   final String subjectCode;
   final String facultyName;
-  final String time;
+  final String timeStart;
+  final String timeEnd;
   final String lectureHall;
   final String lectureBlock;
   final Color color;
@@ -16,7 +17,8 @@ class PeriodCard extends StatelessWidget {
       {this.subjectName = "Web Technology",
       this.subjectCode = "KCS-502",
       this.facultyName = "Ms. Lopamudra Mohanty",
-      this.time = "10:00 - 11:00",
+      this.timeStart = "10:00",
+      this.timeEnd = "11:00",
       this.lectureHall = "LT 60",
       this.lectureBlock = "KC block",
       this.color = Styles.blueCard,
@@ -53,7 +55,7 @@ class PeriodCard extends StatelessWidget {
                           SizedBox(
                             height: 6,
                           ),
-                          Text("10:00",
+                          Text(timeStart,
                               style: GoogleFonts.poppins(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
@@ -67,7 +69,7 @@ class PeriodCard extends StatelessWidget {
                                 color: Styles.timeColor,
                                 height: 0.8,
                               )),
-                          Text("11:00",
+                          Text(timeEnd,
                               style: GoogleFonts.poppins(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,

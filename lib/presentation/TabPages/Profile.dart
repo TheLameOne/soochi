@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../utils/styles.dart';
 import '../custom/AttendanceCard.dart';
 import '../custom/ProfileCard.dart';
 
@@ -22,23 +23,31 @@ class _ProfileState extends State<Profile> {
       child: Scaffold(
         body: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Profile",
-                    style: GoogleFonts.poppins(
-                        fontSize: 26, fontWeight: FontWeight.w600)),
-                SizedBox(height: 32),
-                ProfileCard(
-                  onTap: () {},
-                ),
-                AttendanceCard(
-                  onTap: () {},
-                ),
-              ],
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Profile",
+                      style: GoogleFonts.poppins(
+                          fontSize: 26, fontWeight: FontWeight.w600)),
+                  SizedBox(height: 32),
+                  ProfileCard(
+                    onTap: () {},
+                  ),
+                  AttendanceCard(
+                    onTap: () {},
+                  ),
+                ],
+              ),
+              Text("Department Of Computer Science",
+                  style: GoogleFonts.poppins(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Styles.textColorLight))
+            ],
           ),
         ),
       ),

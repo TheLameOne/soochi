@@ -64,17 +64,18 @@ class AttendanceCard extends StatelessWidget {
                       ),
                       // Chart
                       CircularPercentIndicator(
-                        radius: 32.0,
-                        lineWidth: 6.0,
-                        percent: attendedClasses / totalClasses,
-                        center: Text(
-                          ((attendedClasses / totalClasses) * 100).toString() +
-                              "%",
-                          style: GoogleFonts.poppins(
-                              fontSize: 16, fontWeight: FontWeight.w500),
-                        ),
-                        progressColor: Colors.green,
-                      ),
+                          radius: 32.0,
+                          lineWidth: 6.0,
+                          percent: attendedClasses / totalClasses,
+                          center: Text(
+                            ((attendedClasses / totalClasses) * 100)
+                                    .toString() +
+                                "%",
+                            style: GoogleFonts.poppins(
+                                fontSize: 16, fontWeight: FontWeight.w500),
+                          ),
+                          progressColor: Styles.navbarIcons),
+                      SizedBox(width: 12),
                       Column(
                         children: [
                           Row(
@@ -97,13 +98,13 @@ class AttendanceCard extends StatelessWidget {
                             style: GoogleFonts.poppins(
                                 fontSize: 24,
                                 fontWeight: FontWeight.w500,
-                                color: Colors.green),
+                                color: Styles.navbarIcons),
                           )
                         ],
                       )
                     ]),
                 SizedBox(
-                  height: 45,
+                  height: 32,
                 )
               ],
             ),

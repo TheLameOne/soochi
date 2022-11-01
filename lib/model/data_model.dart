@@ -26,25 +26,46 @@ class DataModel {
 
 class Slot {
   int? id;
-  String? lecture;
-  String? faculty;
-  String? venue;
+  String? subjectName;
+  String? subjectCode;
+  String? facultyName;
+  String? timeStart;
+  String? timeEnd;
+  String? lectureHall;
+  String? lectureBlock;
 
-  Slot({this.id, this.lecture, this.faculty, this.venue});
+  Slot({
+    this.id,
+    this.subjectName,
+    this.subjectCode,
+    this.facultyName,
+    this.timeStart,
+    this.timeEnd,
+    this.lectureHall,
+    this.lectureBlock,
+  });
 
   Slot.fromJson(Map<String, dynamic> json) {
     id = json['id'];
-    lecture = json['lecture'];
-    faculty = json['faculty'];
-    venue = json['venue'];
+    subjectName = json['subjectName'];
+    subjectCode = json['subjectCode'];
+    facultyName = json['facultyName'];
+    timeStart = json['timeStart'];
+    timeEnd = json['timeEnd'];
+    lectureHall = json['lectureHall'];
+    lectureBlock = json['lectureBlock'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['lecture'] = this.lecture;
-    data['faculty'] = this.faculty;
-    data['venue'] = this.venue;
+    data['id'] = id;
+    data['subjectName'] = subjectName;
+    data['subjectCode'] = subjectCode;
+    data['facultyName'] = facultyName;
+    data['timeStart'] = timeStart;
+    data['timeEnd'] = timeEnd;
+    data['lectureHall'] = lectureHall;
+    data['lectureBlock'] = lectureBlock;
     return data;
   }
 }
