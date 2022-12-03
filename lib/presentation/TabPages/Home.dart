@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:soochi/model/test_model.dart';
 import '../../model/data_model.dart';
+import '../../model/sheets_model.dart';
+import '../../services/sheet_api.dart';
 import '../../utils/styles.dart';
 import 'package:flutter/services.dart' as rootbundle;
 
@@ -20,6 +22,11 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   var colorList = [Styles.redCard, Styles.blueCard, Styles.yellowCard];
   @override
+  // void initState() {
+  //   getFeedbackFromSheet();
+  //   super.initState();
+  // }
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
@@ -29,7 +36,7 @@ class _HomeState extends State<Home> {
           if (data.hasError) {
             return Center(child: Text("${data.error}"));
           } else if (data.hasData) {
-            var items = data.data as List<DataModel>;
+            var items = data.data as List<SheetModel>;
             return Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -55,21 +62,25 @@ class _HomeState extends State<Home> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       for (int j = 0; j < items.length; j++)
-                        for (int i = 0; i < items[j].slot!.length; i++)
+                        for (int i = 0; i < 2; i++)
                           // Custom Card
                           PeriodCard(
-                            facultyName:
-                                items[j].slot![i].facultyName.toString(),
+                            facultyName: items[j]
+                                .lectures![i]
+                                .facultyIncharge
+                                .toString(),
                             subjectCode:
-                                items[j].slot![i].subjectCode.toString(),
+                                items[j].lectures![i].subjectCode.toString(),
                             subjectName:
-                                items[j].slot![i].subjectName.toString(),
-                            timeStart: items[j].slot![i].timeStart.toString(),
-                            timeEnd: items[j].slot![i].timeEnd.toString(),
-                            lectureHall:
-                                items[j].slot![i].lectureHall.toString(),
-                            lectureBlock:
-                                items[j].slot![i].lectureBlock.toString(),
+                                items[j].lectures![i].subjectName.toString(),
+                            timeStart: "yoyo",
+                            timeEnd: "yoyo",
+                            // timeStart: items[j].slot![i].timeStart.toString(),
+                            // timeEnd: items[j].slot![i].timeEnd.toString(),
+                            lectureHall: items[j].lectures![i].venue.toString(),
+                            lectureBlock: "KC Block",
+                            // lectureBlock:
+                            //     items[j].slot![i].lectureBlock.toString(),
                             onTap: () {},
                             color:
                                 colorList[Random().nextInt(colorList.length)],
@@ -103,12 +114,14 @@ class _HomeState extends State<Home> {
     );
   }
 
-  Future<List<DataModel>> readJsonData() async {
-    final jsondata = await rootbundle.rootBundle.loadString('json/data.json');
+  Future<List<SheetModel>> readJsonData() async {
+    final jsondata = await rootbundle.rootBundle.loadString('json/sheet.json');
     print(jsondata);
     final list = json.decode(jsondata) as List<dynamic>;
-    List<DataModel> res = [];
-    for (var item in list) res.add(DataModel.fromJson(item));
+    List<SheetModel> res = [];
+    for (var item in list) {
+      res.add(SheetModel.fromJson(item));
+    }
     return res;
     // return list.map((e) => DataModel.fromJson(e)).toList();
   }

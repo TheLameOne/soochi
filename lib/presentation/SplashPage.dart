@@ -79,19 +79,16 @@ class _SplashPageState extends State<SplashPage> {
               //   borderRadius: BorderRadius.circular(10),
               // ),
               child: Center(
-                  child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Icon(icontab,
-                        color: currentPage == index
-                            ? Styles.navbarIcons
-                            : Colors.black,
-                        size: (28)),
-                    // (currentPage == index) ? Container(margin:const EdgeInsets.only(left: 8) ,child: CustomText.smalltext(text)) : const Text('')
-                  ],
-                ),
+                  child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(icontab,
+                      color: currentPage == index
+                          ? Styles.navbarIcons
+                          : Colors.black,
+                      size: (28)),
+                  // (currentPage == index) ? Container(margin:const EdgeInsets.only(left: 8) ,child: CustomText.smalltext(text)) : const Text('')
+                ],
               )),
             ),
           ],
