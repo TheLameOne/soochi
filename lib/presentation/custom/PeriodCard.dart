@@ -63,6 +63,7 @@ class _PeriodCardState extends State<PeriodCard> {
 
   @override
   Widget build(BuildContext context) {
+    var facultyList = widget.facultyName.split("/");
     return InkWell(
       onTap: () {
         widget.onTap();
@@ -132,12 +133,15 @@ class _PeriodCardState extends State<PeriodCard> {
                       style: GoogleFonts.poppins(
                           fontSize: 12, fontWeight: FontWeight.w500),
                     ),
-                    Text(
-                      // items[j].slot![i].faculty.toString(),
-                      widget.facultyName,
-                      style: GoogleFonts.poppins(
-                          fontSize: 12, fontWeight: FontWeight.w500),
-                    )
+                    for (var i = 0; i < facultyList.length; i++)
+                      Text(
+                        // items[j].slot![i].faculty.toString(),
+                        facultyList[i],
+                        style: GoogleFonts.poppins(
+                            fontSize:
+                                12 - (facultyList.length.toDouble() * 0.5),
+                            fontWeight: FontWeight.w500),
+                      )
                   ],
                 ),
               ],
