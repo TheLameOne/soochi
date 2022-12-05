@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:soochi/utils/global.dart';
 import 'package:soochi/utils/styles.dart';
 
-class PeriodCard extends StatelessWidget {
-  final String subjectName;
-  final String subjectCode;
-  final String facultyName;
+class PeriodCard extends StatefulWidget {
+  late String subjectName;
+  late String subjectCode;
+  late String facultyName;
   final String timeStart;
   final String timeEnd;
-  final String lectureHall;
+  late String lectureHall;
   final String lectureBlock;
   final Color color;
   final Function onTap;
 
-  const PeriodCard(
+  PeriodCard(
       {this.subjectName = "Web Technology",
       this.subjectCode = "KCS-502",
       this.facultyName = "Ms. Lopamudra Mohanty",
@@ -25,15 +26,51 @@ class PeriodCard extends StatelessWidget {
       required this.onTap});
 
   @override
+  State<PeriodCard> createState() => _PeriodCardState();
+}
+
+class _PeriodCardState extends State<PeriodCard> {
+  @override
+  void initState() {
+    super.initState();
+    assign();
+  }
+
+  void assign() {
+    if (widget.subjectName.contains("/")) {
+      var sn = widget.subjectName.split("/");
+      var sc = widget.subjectCode.split("/");
+      var fn = widget.facultyName.split("-");
+      var lh = widget.lectureHall.split("/");
+      var s1 = sn[0].split("-");
+      var s2 = sn[1].split("-");
+
+      if (s1[1] == batch || s1[1] == subject) {
+        widget.subjectName = s1[0];
+        widget.subjectCode = sc[0];
+        widget.facultyName = fn[0];
+        widget.lectureHall = lh[0];
+      }
+
+      if (s2[1] == batch || s2[1] == subject) {
+        widget.subjectName = s2[0];
+        widget.subjectCode = sc[1];
+        widget.facultyName = fn[1];
+        widget.lectureHall = lh[1];
+      }
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        onTap();
+        widget.onTap();
       },
       child: Container(
         margin: const EdgeInsets.only(bottom: 8),
         child: Card(
-          color: color.withOpacity(0.6),
+          color: widget.color.withOpacity(0.6),
           // shadowColor: Styles.COLOR1,
           // elevation: 2,
           clipBehavior: Clip.antiAlias,
@@ -45,7 +82,7 @@ class PeriodCard extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                    color: color,
+                    color: widget.color,
                     width: 74,
                     height: 90,
                     child: Column(
@@ -55,7 +92,7 @@ class PeriodCard extends StatelessWidget {
                           SizedBox(
                             height: 6,
                           ),
-                          Text(timeStart,
+                          Text(widget.timeStart,
                               style: GoogleFonts.poppins(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
@@ -69,7 +106,7 @@ class PeriodCard extends StatelessWidget {
                                 color: Styles.timeColor,
                                 height: 0.8,
                               )),
-                          Text(timeEnd,
+                          Text(widget.timeEnd,
                               style: GoogleFonts.poppins(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
@@ -85,19 +122,19 @@ class PeriodCard extends StatelessWidget {
                   children: [
                     Text(
                       // items[j].slot![i].lecture.toString(),
-                      subjectName,
+                      widget.subjectName,
                       style: GoogleFonts.poppins(
                           fontSize: 20, fontWeight: FontWeight.w500),
                     ),
                     Text(
                       // items[j].slot![i].faculty.toString(),
-                      subjectCode,
+                      widget.subjectCode,
                       style: GoogleFonts.poppins(
                           fontSize: 12, fontWeight: FontWeight.w500),
                     ),
                     Text(
                       // items[j].slot![i].faculty.toString(),
-                      facultyName,
+                      widget.facultyName,
                       style: GoogleFonts.poppins(
                           fontSize: 12, fontWeight: FontWeight.w500),
                     )

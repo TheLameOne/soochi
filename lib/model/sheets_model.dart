@@ -7,12 +7,8 @@ class SheetModel {
 
   SheetModel.fromJson(Map<String, dynamic> json) {
     day = json['day'];
-    if (json['time'] != null) {
-      time = <String>[];
-      json['time'].forEach((v) {
-        time!.add(v);
-      });
-    }
+    time = json['time'].cast<String>();
+
     if (json['lectures'] != null) {
       lectures = <Lectures>[];
       json['lectures'].forEach((v) {
@@ -24,9 +20,7 @@ class SheetModel {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['day'] = day;
-    if (time != null) {
-      data['time'] = time!.toList();
-    }
+    data['time'] = time;
     if (lectures != null) {
       data['lecture'] = lectures!.map((v) => v.toJson()).toList();
     }

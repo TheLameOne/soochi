@@ -62,29 +62,25 @@ class _HomeState extends State<Home> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       for (int j = 0; j < items.length; j++)
-                        for (int i = 0; i < 2; i++)
-                          // Custom Card
-                          PeriodCard(
-                            facultyName: items[j]
-                                .lectures![i]
-                                .facultyIncharge
-                                .toString(),
-                            subjectCode:
-                                items[j].lectures![i].subjectCode.toString(),
-                            subjectName:
-                                items[j].lectures![i].subjectName.toString(),
-                            timeStart: "yoyo",
-                            timeEnd: "yoyo",
-                            // timeStart: items[j].slot![i].timeStart.toString(),
-                            // timeEnd: items[j].slot![i].timeEnd.toString(),
-                            lectureHall: items[j].lectures![i].venue.toString(),
-                            lectureBlock: "KC Block",
-                            // lectureBlock:
-                            //     items[j].slot![i].lectureBlock.toString(),
-                            onTap: () {},
-                            color:
-                                colorList[Random().nextInt(colorList.length)],
-                          ),
+                        // Custom Card
+                        PeriodCard(
+                          facultyName:
+                              items[j].lectures![j].facultyIncharge.toString(),
+                          subjectCode:
+                              items[j].lectures![j].subjectCode.toString(),
+                          subjectName:
+                              items[j].lectures![j].subjectName.toString(),
+                          timeStart: "yoyo",
+                          timeEnd: "yoyo",
+                          // timeStart: items[j].slot![i].timeStart.toString(),
+                          // timeEnd: items[j].slot![i].timeEnd.toString(),
+                          lectureHall: items[j].lectures![j].venue.toString(),
+                          // lectureBlock: "KC Block",
+                          // lectureBlock:
+                          //     items[j].slot![i].lectureBlock.toString(),
+                          onTap: () {},
+                          color: colorList[Random().nextInt(colorList.length)],
+                        ),
                       // Text(items[0].slot![1].lecture.toString()),
                       // Text(items[0].slot![2].lecture.toString()),
                       // Text(items[0].slot![3].lecture.toString()),
@@ -116,7 +112,7 @@ class _HomeState extends State<Home> {
 
   Future<List<SheetModel>> readJsonData() async {
     final jsondata = await rootbundle.rootBundle.loadString('json/sheet.json');
-    print(jsondata);
+    // print(jsondata);
     final list = json.decode(jsondata) as List<dynamic>;
     List<SheetModel> res = [];
     for (var item in list) {

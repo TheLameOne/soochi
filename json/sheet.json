@@ -14,70 +14,69 @@
         "8 (3:40-4:30)"
       ],
       "lectures": [
-        [
           {
             "subject_code": "KCS 653/KCS 652",
             "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
             "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
             "venue": "S1/S2"
           }
-        ],
-        [
+        ,
+
           {
             "subject_code": "KCS 653/KCS 652",
             "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
             "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
             "venue": "S1/S2"
           }
-        ],
-        [
+        ,
+        
           {
             "subject_code": "KCS 061/KCS 062",
             "subject_name": "Big Data Analytics-S1/Image Processing-S2 ",
             "faculty_incharge": "Dr.Pankaj Kumar Sharma-Ms.Disha Mohini Pathak",
             "venue": "LT-9/S6"
           }
-        ],
-        [
+        ,
+        
           {
             "subject_code": "KCS 603",
             "subject_name": "Computer Network",
             "faculty_incharge": "Mr.Gaurav Vats",
             "venue": "LT-9"
           }
-        ],
-        [
+        ,
+        
           {
             "subject_code": "KCS 602",
             "subject_name": "Web Technology",
             "faculty_incharge": "Ms.Lopamudra Mohanty",
             "venue": "LT-9"
           }
-        ],
-        [
+        ,
+        
           {
             "subject_code": "DEP",
             "subject_name": "Problem Solving",
             "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
             "venue": "LT-1"
           }
-        ],
-        [
+        ,
+        
           {
             "subject_code": "DEP",
             "subject_name": "Problem Solving",
             "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
             "venue": "LT-1"
           }
-        ],
-        [
+        ,
+        
           {
             "subject_code": "KOE 068",
             "subject_name": "Software Project Management",
             "faculty_incharge": "Ms.Mansi Mahendru",
             "venue": "LT-1"
           }
-        ]
+        
       ]
     },
     {
@@ -95,71 +94,70 @@
         "8 (3:40-4:30)"
       ],
       "lectures": [
-        [
-          {
-            "subject_code": "KCS 602",
-            "subject_name": "Web Technology",
-            "faculty_incharge": "Ms.Lopamudra Mohanty",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "SEEP",
-            "subject_name": "Logical Reasoning",
-            "faculty_incharge": "Mr. Sachin Kumar Sharma/ Mr.Ayush Malik",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "HET",
-            "faculty_incharge": "Mr. Pradeep Sharma",
-            "venue": "S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "HET",
-            "faculty_incharge": "Mr. Pradeep Sharma",
-            "venue": "S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 601",
-            "subject_name": "Software Engineering",
-            "faculty_incharge": "Mr.Rohit Vashisht",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 603",
-            "subject_name": "Computer Network",
-            "faculty_incharge": "Mr.Gaurav Vats",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "SEEP",
-            "subject_name": "Quantitude Apptitude",
-            "faculty_incharge": "Mr. Sachin Kumar Sharma/ Mr.Ayush Malik",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "Mentor Mentee Meeting",
-            "faculty_incharge": "Ms.Lopamudra Mohanty / Mr. Rohit Vashisht",
-            "venue": "LT-9"
-          }
-        ]
-      ]
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 061/KCS 062",
+          "subject_name": "Big Data Analytics-S1/Image Processing-S2 ",
+          "faculty_incharge": "Dr.Pankaj Kumar Sharma-Ms.Disha Mohini Pathak",
+          "venue": "LT-9/S6"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 603",
+          "subject_name": "Computer Network",
+          "faculty_incharge": "Mr.Gaurav Vats",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 602",
+          "subject_name": "Web Technology",
+          "faculty_incharge": "Ms.Lopamudra Mohanty",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "KOE 068",
+          "subject_name": "Software Project Management",
+          "faculty_incharge": "Ms.Mansi Mahendru",
+          "venue": "LT-1"
+        }
+      
+    ]
     },
     {
       "day": "Wednesday",
@@ -176,71 +174,70 @@
         "8 (3:40-4:30)"
       ],
       "lectures": [
-        [
-          {
-            "subject_code": "KCS 602",
-            "subject_name": "Web Technology",
-            "faculty_incharge": "Ms.Lopamudra Mohanty",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 603",
-            "subject_name": "Computer Network",
-            "faculty_incharge": "Mr.Gaurav Vats",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 602",
-            "subject_name": "Web Technology",
-            "faculty_incharge": "Ms.Lopamudra Mohanty",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 653/KCS 652",
-            "subject_name": "Computer Network Lab-B2/Web Technology Lab-B1",
-            "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
-            "venue": "S1/S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 653/KCS 652",
-            "subject_name": "Computer Network Lab-B2/Web Technology Lab-B1",
-            "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
-            "venue": "S1/S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 601",
-            "subject_name": "Software Engineering",
-            "faculty_incharge": "Mr.Rohit Vashisht",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 653/KCS 652",
-            "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
-            "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
-            "venue": "S1/S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 653/KCS 652",
-            "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
-            "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
-            "venue": "S1/S2"
-          }
-        ]
-      ]
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 061/KCS 062",
+          "subject_name": "Big Data Analytics-S1/Image Processing-S2 ",
+          "faculty_incharge": "Dr.Pankaj Kumar Sharma-Ms.Disha Mohini Pathak",
+          "venue": "LT-9/S6"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 603",
+          "subject_name": "Computer Network",
+          "faculty_incharge": "Mr.Gaurav Vats",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 602",
+          "subject_name": "Web Technology",
+          "faculty_incharge": "Ms.Lopamudra Mohanty",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "KOE 068",
+          "subject_name": "Software Project Management",
+          "faculty_incharge": "Ms.Mansi Mahendru",
+          "venue": "LT-1"
+        }
+      
+    ]
     },
     {
       "day": "Thursday",
@@ -257,71 +254,70 @@
         "8 (3:40-4:30)"
       ],
       "lectures": [
-        [
-          {
-            "subject_code": "KCS 603",
-            "subject_name": "Computer Network",
-            "faculty_incharge": "Mr.Gaurav Vats",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "SEEP",
-            "subject_name": "Verbal Ability",
-            "faculty_incharge": "Mr. Sachin Kumar Sharma/ Mr.Ayush Malik",
-            "venue": "SH-4"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 061/KCS 062",
-            "subject_name": "Big Data Analytics-S1/Image Processing-S2",
-            "faculty_incharge": "Dr.Pankaj Kumar Sharma-Ms.Disha Mohini Pathak",
-            "venue": "LT-9/S6"
-          }
-        ],
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "Problem Solving",
-            "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
-            "venue": "LT-1"
-          }
-        ],
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "Problem Solving",
-            "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
-            "venue": "LT-1"
-          }
-        ],
-        [
-          {
-            "subject_code": "KOE 068",
-            "subject_name": "Software Project Management",
-            "faculty_incharge": "Ms.Mansi Mahendru",
-            "venue": "LT-1"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 601",
-            "subject_name": "Software Engineering",
-            "faculty_incharge": "Mr.Rohit Vashisht",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 603",
-            "subject_name": "Computer Network",
-            "faculty_incharge": "Mr.Gaurav Vats",
-            "venue": "LT-9"
-          }
-        ]
-      ]
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 061/KCS 062",
+          "subject_name": "Big Data Analytics-S1/Image Processing-S2 ",
+          "faculty_incharge": "Dr.Pankaj Kumar Sharma-Ms.Disha Mohini Pathak",
+          "venue": "LT-9/S6"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 603",
+          "subject_name": "Computer Network",
+          "faculty_incharge": "Mr.Gaurav Vats",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 602",
+          "subject_name": "Web Technology",
+          "faculty_incharge": "Ms.Lopamudra Mohanty",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "KOE 068",
+          "subject_name": "Software Project Management",
+          "faculty_incharge": "Ms.Mansi Mahendru",
+          "venue": "LT-1"
+        }
+      
+    ]
     },
     {
       "day": "Friday",
@@ -338,71 +334,70 @@
         "8 (3:40-4:30)"
       ],
       "lectures": [
-        [
-          {
-            "subject_code": "KCS 061/KCS 062",
-            "subject_name": "Big Data Analytics-S1/Image Processing-S2",
-            "faculty_incharge": "Dr.Pankaj Kumar Sharma-Ms.Disha Mohini Pathak",
-            "venue": "LT-9/S6"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 601",
-            "subject_name": "Software Engineering",
-            "faculty_incharge": "Mr.Rohit Vashisht",
-            "venue": "LT-9"
-          }
-        ],
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "HET",
-            "faculty_incharge": "Mr. Pradeep Sharma",
-            "venue": "S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "HET",
-            "faculty_incharge": "Mr. Pradeep Sharma",
-            "venue": "S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "KOE 068",
-            "subject_name": "Software Project Management",
-            "faculty_incharge": "Ms.Mansi Mahendru",
-            "venue": "LT-1"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 653/KCS 652",
-            "subject_name": "Computer Network Lab-B2/Web Technology Lab-B1",
-            "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
-            "venue": "S1/S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "KCS 653/KCS 652",
-            "subject_name": "Computer Network Lab-B2/Web Technology Lab-B1",
-            "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
-            "venue": "S1/S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "SEEP",
-            "subject_name": "Seminar",
-            "faculty_incharge": "Mr. Sachin Kumar Sharma/ Mr.Ayush Malik",
-            "venue": "SH-4"
-          }
-        ]
-      ]
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 061/KCS 062",
+          "subject_name": "Big Data Analytics-S1/Image Processing-S2 ",
+          "faculty_incharge": "Dr.Pankaj Kumar Sharma-Ms.Disha Mohini Pathak",
+          "venue": "LT-9/S6"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 603",
+          "subject_name": "Computer Network",
+          "faculty_incharge": "Mr.Gaurav Vats",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 602",
+          "subject_name": "Web Technology",
+          "faculty_incharge": "Ms.Lopamudra Mohanty",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "KOE 068",
+          "subject_name": "Software Project Management",
+          "faculty_incharge": "Ms.Mansi Mahendru",
+          "venue": "LT-1"
+        }
+      
+    ]
     },
     {
       "day": "Saturday",
@@ -419,49 +414,69 @@
         "8 (3:40-4:30)"
       ],
       "lectures": [
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "HET",
-            "faculty_incharge": "Mr. Pradeep Sharma",
-            "venue": "S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "DEP",
-            "subject_name": "HET",
-            "faculty_incharge": "Mr. Pradeep Sharma",
-            "venue": "S2"
-          }
-        ],
-        [
-          {
-            "subject_code": "KNC 602",
-            "subject_name": "ITC",
-            "faculty_incharge": "Mr.Pradeep Sharma",
-            "venue": "Online"
-          }
-        ],
-        [
-          {
-            "subject_code": "KNC 602",
-            "subject_name": "ITC",
-            "faculty_incharge": "Mr.Pradeep Sharma",
-            "venue": "Online"
-          }
-        ],
-        [
-          {
-            "subject_code": "KNC 602",
-            "subject_name": "ITC",
-            "faculty_incharge": "Mr.Pradeep Sharma",
-            "venue": "Online"
-          }
-        ],
-        [],
-        [],
-        []
-      ]
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+
+        {
+          "subject_code": "KCS 653/KCS 652",
+          "subject_name": "Computer Network Lab-B1/Web Technology Lab-B2",
+          "faculty_incharge": "Mr.Gaurav Vats/Ms.Shruti Keshari/Ms.Vanshika Rastogi-Ms.Lopamudra Mohanty/Mr.Gagan Thakral",
+          "venue": "S1/S2"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 061/KCS 062",
+          "subject_name": "Big Data Analytics-S1/Image Processing-S2 ",
+          "faculty_incharge": "Dr.Pankaj Kumar Sharma-Ms.Disha Mohini Pathak",
+          "venue": "LT-9/S6"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 603",
+          "subject_name": "Computer Network",
+          "faculty_incharge": "Mr.Gaurav Vats",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "KCS 602",
+          "subject_name": "Web Technology",
+          "faculty_incharge": "Ms.Lopamudra Mohanty",
+          "venue": "LT-9"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "DEP",
+          "subject_name": "Problem Solving",
+          "faculty_incharge": "Mr. Rohit Vashisht/ Mr. Rahul Kumar Sharma",
+          "venue": "LT-1"
+        }
+      ,
+      
+        {
+          "subject_code": "KOE 068",
+          "subject_name": "Software Project Management",
+          "faculty_incharge": "Ms.Mansi Mahendru",
+          "venue": "LT-1"
+        }
+      
+    ]
     }
   ]
