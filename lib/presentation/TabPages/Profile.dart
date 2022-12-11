@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../utils/global.dart';
 import '../../utils/styles.dart';
 import '../custom/AttendanceCard.dart';
 import '../custom/ProfileCard.dart';
@@ -42,9 +43,9 @@ class _ProfileState extends State<Profile> {
                   ),
                 ],
               ),
-              Text("Department Of Computer Science",
+              Text("Department Of $department",
                   style: GoogleFonts.poppins(
-                      fontSize: 16,
+                      fontSize: 16 - department.length.toDouble() * 0.1,
                       fontWeight: FontWeight.w500,
                       color: Styles.textColorLight))
             ],
